@@ -1,0 +1,76 @@
+# Project information
+site_name: Digital Logbook System for IPT
+site_description: Documentation for the Digital Logbook System for Industrial Practical Training (IPT)
+site_author: Njoxpy
+site_url: https://yourdomain.com/
+copyright: "Your University (MIT)"
+
+# Repository
+repo_name: yourusername/digital-logbook-system
+repo_url: https://github.com/yourusername/digital-logbook-system/
+edit_uri: blob/main/docs/
+
+# Custom folder structure
+docs_dir: "docs/"
+use_directory_urls: true
+
+nav:
+  - Home: index.md
+  - Documentation:
+      - project-charter.md
+      - requirements.md
+      - feasibility-study.md
+      - project-plan.md
+      - system-design.md
+      - testing-plan.md
+      - deployment-plan.md
+      - user-manual.md
+      - maintenance-plan.md
+
+# Extensions to enhance markdown
+markdown_extensions:
+  - admonition
+  - attr_list
+  - meta
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - toc
+
+plugins:
+  - search
+
+theme:
+  name: material
+  favicon: assets/logo_digital_logbook_system.svg
+  logo: assets/logo_digital_logbook_system.png
+  palette:
+    accent: amber
+    primary: deep orange
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.footer
+    - navigation.tabs.sticky
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  icon:
+    logo: simple/logbook
+    edit: material/pencil
+    view: material/eye
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://mapstodon.space/@yourusername
+      name: Follow me on Mastodon
+    - icon: fontawesome/solid/piggy-bank
+      link: /team/sponsoring/
+      name: Sponsor development
