@@ -9,10 +9,10 @@
 ## Financial Feasibility
 
 - **Estimated Costs:**
-  - Development tools and licenses: $500
-  - Hosting and domain: $200/year
-  - Miscellaneous expenses: $300
-- **Budget:** Available budget of $2,000 covers estimated costs.
+  - Development tools and licenses: $
+  - Hosting and domain: $/year
+  - Miscellaneous expenses: $
+- **Budget:** Available budget of $ covers estimated costs.
 
 ## Operational Feasibility
 
