@@ -1,0 +1,84 @@
+site_name: IPT
+site_url: https://www.mkdocs.org/
+site_description: IPT documentation with Markdown.
+site_author: NjoxPy
+
+# Repository
+# repo_name: repo name url
+# repo_url: link to docs repo url
+# edit_uri: edit/main/docs/
+
+# navigation
+nav:
+  - index.md
+  - project-charter.md
+  - requirements.md
+  - feasibility-study.md
+  - project-plan.md
+  - system-design.md
+  - testing-plan.md
+  - deployment-plan.md
+  - user-manual.md
+  - maintenance-plan.md
+
+theme:
+  name: readthedocs
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+# repo_url: https://github.com/mkdocs/mkdocs/
+# edit_uri: blob/master/docs/
+
+# nav:
+
+#   # folder structure for the repository
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/Njoxpy
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Njox16
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/godbless-nyagawa/
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/Njoxpy" target="_blank" rel="noopener">Godbless Nyagawa(NjoxPy)</a>
