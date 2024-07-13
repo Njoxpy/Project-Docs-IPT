@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="NjoxPy" /><link rel="canonical" href="https://www.mkdocs.org/requirements/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Requirements - IPT</title>
+    <title>Requirements Document - IPT</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Requirements";
+        var mkdocs_page_name = "Requirements Document";
         var mkdocs_page_input_path = "requirements.md";
         var mkdocs_page_url = "/requirements/";
       </script>
@@ -44,23 +44,33 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../project-charter/">Project charter</a>
+                <li class="toctree-l1"><a class="reference internal" href="../project-charter/">Project Charter</a>
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Requirements</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Requirements Document</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#functional-requirements">Functional Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#non-functional-requirements">Non-Functional Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../feasibility-study/">Feasibility study</a>
+                <li class="toctree-l1"><a class="reference internal" href="../feasibility-study/">Feasibility Study Report</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../project-plan/">Project plan</a>
+                <li class="toctree-l1"><a class="reference internal" href="../project-plan/">Feasibility Study Report</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../system-design/">System design</a>
+                <li class="toctree-l1"><a class="reference internal" href="../system-design/">System Design Document</a>
                 </li>
               </ul>
               <ul>
@@ -72,7 +82,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../user-manual/">User manual</a>
+                <li class="toctree-l1"><a class="reference internal" href="../user-manual/">User Manual</a>
                 </li>
               </ul>
               <ul>
@@ -93,7 +103,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Requirements</li>
+      <li class="breadcrumb-item active">Requirements Document</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -102,13 +112,72 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="requirements-document">Requirements Document</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This document outlines the functional and non-functional requirements for the Digital Logbook System for IPT.</p>
+<h2 id="functional-requirements">Functional Requirements</h2>
+<ol>
+<li><strong>User Authentication</strong></li>
+<li>Users can register and log in.</li>
+<li>Password recovery functionality.</li>
+<li><strong>Logbook Entry</strong></li>
+<li>Students can create, edit, and delete logbook entries.</li>
+<li>Entries include date, description of activities, and time spent.</li>
+<li><strong>Supervisor Feedback</strong></li>
+<li>Supervisors can review student entries.</li>
+<li>Supervisors can leave comments and approve entries.</li>
+<li><strong>Reporting</strong></li>
+<li>Generate basic reports on student progress and activities.</li>
+</ol>
+<h2 id="non-functional-requirements">Non-Functional Requirements</h2>
+<ul>
+<li><strong>Performance:</strong> The system should handle up to 500 concurrent users(bado!!!!!1).</li>
+<li><strong>Security:</strong> Data should be encrypted in transit and at rest.</li>
+<li><strong>Usability:</strong> The system should be user-friendly and accessible on desktop and mobile browsers.</li>
+<li><strong>Accessibilitybility:</strong> The System should be user friendly to be accessible by all types of people inclduing people with disability.</li>
+</ul>
+<h2 id="use-cases">Use Cases</h2>
+<ol>
+<li>
+<p><strong>User Registration</strong></p>
+</li>
+<li>
+<p><strong>Actor:</strong> Student</p>
+</li>
+<li><strong>Scenario:</strong> A student registers for a new account.</li>
+<li>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the registration page.</li>
+<li>Fill in the registration form with name(registration number), email, and password.</li>
+<li>Submit the form.</li>
+<li>
+<p>Receive a confirmation email and activate the account.</p>
+</li>
+<li>
+<p>On registration I will instead use sims for enabling user to login with SIMS account.Integrating with SIMS.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Create Logbook Entry</strong></p>
+</li>
+<li><strong>Actor:</strong> Student</li>
+<li><strong>Scenario:</strong> A student creates a new logbook entry.</li>
+<li><strong>Steps:</strong><ol>
+<li>Log in to the system.</li>
+<li>Navigate to the logbook entry page.</li>
+<li>Fill in the entry details (date, description, time spent).</li>
+<li>Submit the entry.</li>
+</ol>
+</li>
+</ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../project-charter/" class="btn btn-neutral float-left" title="Project charter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../feasibility-study/" class="btn btn-neutral float-right" title="Feasibility study">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../project-charter/" class="btn btn-neutral float-left" title="Project Charter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../feasibility-study/" class="btn btn-neutral float-right" title="Feasibility Study Report">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>

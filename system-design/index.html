@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="NjoxPy" /><link rel="canonical" href="https://www.mkdocs.org/system-design/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>System design - IPT</title>
+    <title>System Design Document - IPT</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "System design";
+        var mkdocs_page_name = "System Design Document";
         var mkdocs_page_input_path = "system-design.md";
         var mkdocs_page_url = "/system-design/";
       </script>
@@ -44,23 +44,33 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../project-charter/">Project charter</a>
+                <li class="toctree-l1"><a class="reference internal" href="../project-charter/">Project Charter</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../requirements/">Requirements</a>
+                <li class="toctree-l1"><a class="reference internal" href="../requirements/">Requirements Document</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../feasibility-study/">Feasibility study</a>
+                <li class="toctree-l1"><a class="reference internal" href="../feasibility-study/">Feasibility Study Report</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../project-plan/">Project plan</a>
+                <li class="toctree-l1"><a class="reference internal" href="../project-plan/">Feasibility Study Report</a>
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">System design</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">System Design Document</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#system-architecture">System Architecture</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#database-design">Database Design</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uiux-design">UI/UX Design</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#technical-specifications">Technical Specifications</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -72,7 +82,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../user-manual/">User manual</a>
+                <li class="toctree-l1"><a class="reference internal" href="../user-manual/">User Manual</a>
                 </li>
               </ul>
               <ul>
@@ -93,7 +103,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">System design</li>
+      <li class="breadcrumb-item active">System Design Document</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -102,12 +112,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="system-design-document">System Design Document</h1>
+<h2 id="system-architecture">System Architecture</h2>
+<ul>
+<li><strong>Description:</strong> The system will follow a client-server architecture using the MERN stack.(depends still evaluating)</li>
+<li><strong>Components:</strong></li>
+<li>Frontend: React.js</li>
+<li>Backend: Node.js with Express.js</li>
+<li>Database: MongoDB</li>
+<li>Hosting: Dunia</li>
+</ul>
+<h2 id="database-design">Database Design</h2>
+<ul>
+<li><strong>ER Diagram:</strong> [].</li>
+<li><strong>Schema Definitions:</strong></li>
+<li>Users: { userID, name, email, password, role (student/supervisor) }</li>
+<li>LogbookEntries: { entryID, userID, date, description, timeSpent }</li>
+<li>Comments: { commentID, entryID, userID, comment, timestamp }</li>
+</ul>
+<h2 id="uiux-design">UI/UX Design</h2>
+<ul>
+<li><strong>Wireframes:</strong> [ogin, dashboard, logbook entry, supervisor review]</li>
+<li><strong>User Interface Design Specifications:</strong></li>
+<li>Use a responsive design for compatibility with desktop and mobile browsers.</li>
+<li>Follow accessibility guidelines to ensure usability for all users.</li>
+</ul>
+<h2 id="technical-specifications">Technical Specifications</h2>
+<ul>
+<li><strong>Frontend:</strong> React.js for building the user interface.</li>
+<li><strong>Backend:</strong> Node.js with Express.js for handling API requests and business logic.</li>
+<li><strong>Database:</strong> MongoDB for storing user data, logbook entries, and comments.</li>
+<li><strong>Hosting:</strong> [Your chosen hosting service] for deploying the application.</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../project-plan/" class="btn btn-neutral float-left" title="Project plan"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../project-plan/" class="btn btn-neutral float-left" title="Feasibility Study Report"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../testing-plan/" class="btn btn-neutral float-right" title="Testing plan">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
