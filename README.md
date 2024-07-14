@@ -46,6 +46,34 @@ We welcome contributions from the community! If you have ideas, suggestions, or 
 
 ---
 
+## Installation
+
+- Install MkDocs,You can install MkDocs using pip (Python package manager). Open your terminal and run:
+
+  ```sh
+  pip install mkdocs
+  ```
+
+  ## Run Locally
+
+  - To preview your documentation as you work on it, you can serve it locally. From your project directory, run:
+ 
+    ```sh
+    mkdocs serve
+    ```
+
+  ## Deploy Documentation
+
+  - Once you're ready to deploy your documentation, you can build the static site by running:
+  - 
+  ```sh
+  mkdocs build
+  ```
+
+  ```sh
+  mkdocs gh-deploy
+  ```
+  
 <!-- Footer -->
 <p align="center">
   <img src="https://place-hold.it/700x1/333333/ffffff" alt="divider">
